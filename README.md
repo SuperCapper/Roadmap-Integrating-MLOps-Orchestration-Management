@@ -136,6 +136,28 @@ Integrating Data Engineering, ML, MLOps, and Orchestration Management into a Luc
  
  * **Hands-On Project:** Use Feast to define some features from your Delta Lake tables and serve them via its API.
 
+#### C. MLflow: The ML Lifecycle Platform
+
+ * **Master the Four Components:**
+ 
+   * **Tracking:** Log parameters, metrics, artifacts, and models during experimentation
+   
+   * **Projects:** Package reproducible ML code
+   
+   * **Models:** Standardize model packaging and deployment
+   
+   * **Registry:** Central model store, versioning, and stage transitions (Staging → Production)
+   
+ * **Hands-On Project:**
+ 
+   * Instrument your model training code with MLflow Tracking
+   
+   * Compare multiple experiment runs with the MLflow UI
+   
+   * Register your best model in the Model Registry
+   
+   * Build a simple REST API that serves predictions from a model loaded via MLflow's pyfunc interface
+
 ## Phase 5: Synthesis & Advanced Topics (Months 13+)
 
 #### Goal: Integrate all the pieces and tackle the hard parts of ML in production.
@@ -167,6 +189,38 @@ Integrating Data Engineering, ML, MLOps, and Orchestration Management into a Luc
  * **Monitoring:** Learn to monitor data drift, concept drift, and model performance (MLflow, Evidently AI).
  
  * **Orchestration: Apache Airflow** or **Prefect** for managing complex batch workflows (like feature engineering and model training).
+
+#### C. Kubernetes Foundation (Prerequisite for Kubeflow)
+
+ * **Core Concepts:** Pods, Deployments, Services, Ingress, ConfigMaps, Secrets
+ 
+ * **Hands-On:** Deploy a simple ML model as a REST API on a local Kubernetes cluster (Minikube or kind)
+
+#### D. Kubeflow: The Complete ML Platform
+
+ * **Concept:** Understand Kubeflow as a "platform for platforms" - it bundles multiple open-source tools into a cohesive Kubernetes-native ML ecosystem.
+ 
+ * **Key Components:**
+ 
+   * **Kubeflow Pipelines (KFP):** The crown jewel - built for end-to-end ML workflows
+   
+   * **Katib:** Hyperparameter tuning and Neural Architecture Search
+   
+   * **KServe:** High-performance, standardized model serving
+   
+   * **Central Dashboard:** Unified UI for the entire ML platform
+
+#### E. Kubeflow Pipelines (KFP): Production ML Workflows
+
+ * **Core Concepts:**
+ 
+   * **Pipeline DSL:** Defining workflows as Python code
+   
+   * **Components:** Reusable, containerized pipeline steps
+   
+   * **Experiments and Runs:** Organizing and tracking pipeline executions
+   
+   * **Artifact Tracking:** Automatic lineage with MLflow integration
 
 ## Recommended Learning Resources
 
