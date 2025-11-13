@@ -1,7 +1,7 @@
 # ML Engineering Roadmap: 
 Integrating Data Engineering, ML, MLOps, and Orchestration Management into a Lucrative Career
 
-## Phase 1: Foundational Bedrock (Months 2-4)
+## Phase 0: Foundational Bedrock (Months 1-3)
 #### Goal: Solidify the core principles and tools. You cannot build a skyscraper on sand.
 
 #### A. Master Python for Data Engineering:
@@ -41,7 +41,32 @@ Integrating Data Engineering, ML, MLOps, and Orchestration Management into a Luc
 * Docker: Be able to containerize any application. Understand Dockerfiles, docker-compose, and basic orchestration.
 
 * Linux/Bash: File manipulation, process management, and basic networking commands.
+  https://slothbytes.beehiiv.com/p/the-command-line-for-dummies
+  
+## Phase 1: The Data Foundational (Month 4)
 
+#### Goal: Solidify the core principles and tools. You cannot build a skyscraper on sand.
+
+How to Become a Data Engineer in 3 Months: Actionable Steps & Projects
+https://medium.com/@vijaygadhave2014/how-to-become-a-data-engineer-in-3-months-actionable-steps-projects-0080f09241dc
+
+How I’m Leveling Up as a Data Engineer in 2025 (Without Burning Out)
+https://medium.com/@vijaygadhave2014/how-im-leveling-up-as-a-data-engineer-in-2025-without-burning-out-96e625eee076
+
+#### A. Master Python for Data Engineering:
+
+* 6 Skills That Make Data Engineers Unstoppable
+  https://medium.com/@vijaygadhave2014/6-skills-that-make-data-engineers-unstoppable-5bb953314de3
+  
+* The Complete Guide to Building Data Pipelines That Don’t Break
+  https://www.kdnuggets.com/the-complete-guide-to-building-data-pipelines-that-dont-break
+
+* building-better-data-pipelines
+  https://github.com/balapriyac/data-science-tutorials/tree/main/building-better-data-pipelines
+
+* The first 90 days as a data engineer: a survival guide
+  https://medium.com/data-science-collective/the-first-90-days-as-a-data-engineer-a-survival-guide-f48ec3631034
+  
 ## Phase 2: The Data Plumbing (Months 5-7)
 
 #### Goal: Understand how data moves and is stored at scale. This is the "nervous system" of your stack.
@@ -243,5 +268,13 @@ Building Machine Learning Powered Applications by Emmanuel Ameisen.
 The official documentation for **Kafka, Flink, Delta Lake, and ClickHouse** is excellent. Read the "Concepts" sections thoroughly.
 
 Blogs from **Confluent, Ververica, Databricks, and Airbnb** often have deep-dive technical articles.
+
+
+
+Prompts for Engineers (245 prompts)
+https://www.superhuman.ai/c/prompts-for-engineers?utm_source=superhuman&utm_medium=newsletter&utm_campaign=you-re-officially-superhuman
+
+
+
 
 This roadmap is ambitious but structured. The key is consistent, hands-on practice. Don't just read—build, break, and debug. This is the path to becoming a true machine learning engineer. Good luck
