@@ -1,5 +1,0 @@
-### Clarity and Readability
-
-1. Don’t Write Clean Code, Write Predictable Code.
-Rule: Structure your code so its behavior is always clear and easy to guess.
-Description: Avoid clever shortcuts, complex math tricks, or hidden side effects. If a function is named calculate_total, it shouldn't also update the user's database entry. Predictable code is safe code.
