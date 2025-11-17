@@ -1,5 +1,68 @@
-## Clarity and Readability
+Clarity and Readability
 
-## 1. Don’t Write Clean Code, Write Predictable Code.
-* Rule: Structure your code so its behavior is always clear and easy to guess.
-* Description: Avoid clever shortcuts, complex math tricks, or hidden side effects. If a function is named calculate_total, it shouldn't also update the user's database entry. Predictable code is safe code.
+1. Write Predictable Code.
+Rule: Structure your code so its behavior is always clear and easy to guess.
+Description: Avoid clever shortcuts, complex math tricks, or hidden side effects. If a function is named calculate_total, it shouldn't also update the user's database entry. Predictable code is safe code.
+
+2. Keep Functions Minimal.
+Rule: Each function or method should focus on doing one complete, well-defined task.
+Description: If your function body is longer than 15–20 lines, it’s likely doing too much. Break down big operations into smaller helper functions. This makes your code easier to test and understand.
+My Experience: A senior developer once told me: “If you need an ‘and’ to describe what your function does, split it.” 			That simple rule instantly improved my code quality.
+
+3. Favor Early Return.
+Rule: Handle invalid inputs or failure conditions at the beginning of a function using an early return or throw.
+Description: This technique removes the need for deep, confusing if/else nesting. It lets the main logic run on the outer layer, improving readability and clarity dramatically.
+
+4. Comment the “Why,” Not the “What.”
+Rule: Your code should be readable enough to explain what it does. Comments should explain why it does it that way.
+Description: If you had to: use a complex fix, chose a non-obvious algorithm, or are working around a bug, document that decision. Never explain simple loops or variable assignments.
+
+5. Maintain Consistency.
+Rule: Adopt the established coding style, formatting, and patterns used in the current project or team.
+Description: Consistency is more important than your personal preference. If the codebase uses camelCase for function names, don't submit code using snake_case. Use automated formatting tools to enforce this rule easily.
+
+Structure and Efficiency
+
+6. DRY: Don’t Repeat Yourself.
+Rule: Avoid duplicating logic. Instead of writing the same lines of code two or more times, extract them into a single, reusable function.
+Description: Duplicated code means that if a bug is found in one place, you must fix it in every other place too. Reusing a single function ensures fixes and updates happen in one location.
+My Experience: A senior developer on Reddit once posted: “The first time you write it, you write it. The second time, you copy it. The third time, you must refactor.” This prevents over-engineering too soon.
+
+7. KISS: Keep It Simple.
+Rule: Always choose the simplest design or solution that satisfies the current requirements.
+Description: Complexity is the biggest enemy of reliability. Don’t build advanced systems or interfaces for features you only think you might need in the future. Over-engineering wastes time and makes maintenance harder.
+
+8. Avoid Hard-Coding.
+Rule: Do not embed configuration values like file paths, API keys, or server names directly into the source code.
+Description: Settings should be stored in configuration files or environment variables. This keeps your code flexible and secure, letting you move it between development, testing, and production systems without needing a code change.
+
+9. Prefer Composition Over Inheritance.
+Rule: When designing objects, favor using other objects inside your class (composition) rather than relying heavily on 			extending classes (inheritance).
+Description: Deep inheritance creates rigid code where changes in one place can break distant objects. Composition creates flexible systems by letting objects “have” capabilities instead of strictly “being” a type.
+
+10. Validate All External Inputs.
+Rule: Treat all data coming from users, APIs, or files as potentially unsafe or incorrect.
+Description: Always check the type, size, and format of any input variable before using it in your logic or database 				queries. This is your first and best defense against crashes and security vulnerabilities.
+
+Process and Quality
+
+11. Master Version Control (Git).
+Rule: Learn to use branching, merging, and history logs effectively with a tool like Git for every project.
+Description: Git is not just for backup; it’s how teams collaborate. It lets you track every single change, safely experiment on new features (branches), and roll back to a stable version if something goes wrong.
+
+12. Write Small, Cohesive Commits.
+Rule: Each Git commit should group changes that solve a single problem or implement a single feature.
+Description: Never combine a bug fix, a new feature, and a cleanup task into one commit. Small, focused commits make code reviews much easier and help you use the history logs to pinpoint exactly when a bug was introduced.
+
+13. Write Unit Tests.
+Rule: Create automated tests for the critical and complex parts of your code.
+Description: Tests are code that validates your main code. They ensure that your core functions work correctly and, most importantly, they let you refactor or change code later with confidence, knowing the tests will warn you if you broke something.
+
+14. Engage in Code Reviews.
+Rule: Submit your changes for peer review and actively review others’ code before merging anything to the main codebase.
+Description: This process catches bugs early, shares knowledge across the team, and helps enforce coding standards. Be humble when receiving feedback and kind when giving it.
+
+15. Throw Clear, Actionable Errors.
+Rule: When an error occurs, the message should provide enough context to diagnose and fix the problem immediately.
+Description: An error like “Error: Failed” is useless. A good error is “Error: User ID 404 failed validation because ‘email’ field was missing.” This clarity drastically cuts down on debugging time for everyone.
+My Experience: A senior developer I worked with taught me to imagine the person seeing the error is stressed and tired. Your error message should be the one thing that instantly tells them what to do next.
