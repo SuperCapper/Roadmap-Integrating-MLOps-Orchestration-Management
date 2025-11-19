@@ -1,1 +1,140 @@
+Most tech discussions fail for one of two reasons: too much ego or not enough direction.
+
+As a senior developer, your job is to kill both.
+
+*****************************************************************************
+
+Some techniques and strategies to have better tech meetings.
+
+1. Jumping to Solutions Without Defining the Problem
+
+  You’ve been receiving numerous customer complaints stating that search results feel “off.”
+  
+  You bring this up in a team meeting, and right away, someone says,
+  
+    “We should redesign the search UI — make it more like Google.”
+  
+  Another person jumps in,
+  
+    “Let’s just switch to Algolia. It’ll be faster and fix everything.”
+  
+  So what’s the right approach here? Notice what’s happening?
+  
+  Everyone’s suggesting fixes, but nobody’s defining the problem.
+  
+  I’d step in and say:
+  
+    “Can we look at a couple of real user queries? What exactly does ‘off’ mean here?”
+  
+  Once we dig in, we might find the issue isn’t about the UI or the search engine at all. Maybe the backend isn’t indexing    new data properly. It could be just a missing cron job.
+  
+  The point is — if we skip over defining the problem, we risk fixing the wrong thing and wasting a ton of time.
+
+2. Long Meeting With No Logical End
+
+  You’re in an architecture call. The team has debated multiple directions for redesigning the notification system:
+  
+  CRON-based batch delivery vs. event-driven vs. real-time push.
+  
+  Lots of valid points. But nothing is decided so far.
+  
+  Only 10 minutes left in the meeting.
+  
+  How would you approach it?
+  
+  Well, I would interrupt with:
+  
+    “Let’s quickly summarize where we are. What are the top 2 options we’re considering? and can we close on a direction         today?”
+  
+  If no one owns the next steps, the same talk happens again in two days.
+  
+  My rule: Before we wrap, someone must decide or take charge. Otherwise, we’re just circling in the same place!
+
+3. Quiet Voices Are Ignored
+
+  In a design walkthrough for the new onboarding flow, a junior engineer who built the POC is also in the meeting.
+  
+  The seniors are now discussing trade-offs around using React Context vs. Redux Toolkit.
+  
+  You noticed that the junior hasn’t said a word.
+  
+  It might feel natural to let the seniors carry the discussion, but here’s where I step in differently.
+  
+    “Hey Raj, you built the first version of this — what worked well or was tricky for you?”
+  
+  By inviting them in, you do two things:
+  
+    * Encourage team participation
+    * Get context you might otherwise miss
+  
+  As a senior, I make sure to speak up for quiet team members who know the details.
+
+4. Strong Opinions Turn Into Arguments
+
+  You’re reviewing an API structure. One engineer says,
+  
+    “We should keep this RESTful and consistent.”
+  
+  And another says,
+  
+    “This use case screams for GraphQL — let’s modernize.”
+  
+  They start arguing — and the rest of the team just watches and enjoys the show with popcorn.
+  
+  Do you let the debate continue and let them figure it out between themselves?
+  
+  In these situations, I often see the lead shut down one idea and push their own.
+  
+  This is purely based on their personal bias and experience.
+  
+  But to resolve such scenarios, you have to be rational in your decision-making.
+  
+  I break in and say:
+  
+    “Both of you are bringing strong points. Let’s align on what success looks like here — performance? simplicity?             onboarding ease? Once we define that, choosing the right approach will get easier.”
+  
+  Senior developers are conflict diffusers, not referees. I don’t choose sides — I bring people back to shared goals.
+
+5. Discussions Get Derailed by Shiny New Tools
+
+  You’re almost finalizing a migration plan from MySQL to Postgres.
+  
+  Then someone says:
+  
+    “Have you all seen this new distributed SQL engine — CockroachDB? It sounds perfect for our needs. Everyone is using       it!”
+  
+  Now the room is distracted. Some are excited, while others are confused.
+  
+  How do you bring the focus back without shutting people down?
+  
+  I say:
+  
+    “That’s worth exploring, but we’re trying to finalize a near-term plan here. Let’s explore CockroachDB for a spike         later, but right now, we need to close on our Postgres rollout steps.”
+  
+  Shiny tech is fun, but good leaders keep the team focused.
+  
+  I don’t shut ideas down — I timebox them and keep momentum on core goals.
+
+6. Decisions Are Made… and Then Forgotten
+
+  You’ve had three long meetings on versioning the public API.
+  
+  A direction was agreed upon — or so you thought. But a teammate opens a PR using a different approach.
+  
+  What went wrong? Weren’t we all on the same page?
+  
+  Well, not really!
+  
+  Whatever approach we decided, it wasn’t communicated to the members. This causes such mess-ups.
+  
+  I make a habit of posting a written summary after key discussions:
+  
+    ✅ Decision: Use version numbers in the URL (like /v1/)
+    📌 Reason: It's easy to route, works with the current gateway, 
+               and is simple to understand.
+    👤 Owner: Ravi will own PR to apply the change by Friday.
+  
+  It takes 5 minutes and avoids hours of future confusion.
+  
+  Verbal alignment is temporary. Written alignment sticks.
 
